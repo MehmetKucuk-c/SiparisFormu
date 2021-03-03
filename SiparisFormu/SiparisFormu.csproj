@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2CF14DD-4476-44E6-85B2-F03ED6CBB339}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiparisFormu</RootNamespace>
+    <AssemblyName>SiparisFormu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaEkranUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnaEkranUserControl.Designer.cs">
+      <DependentUpon>AnaEkranUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirimFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirimFrm.Designer.cs">
+      <DependentUpon>bildirimFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsMusteriler.cs" />
+    <Compile Include="CsUrunLer.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="degistir.cs" />
+    <Compile Include="MesajForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MesajForm.Designer.cs">
+      <DependentUpon>MesajForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriKayit.Designer.cs">
+      <DependentUpon>MusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rnd.cs" />
+    <Compile Include="SiparisUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SiparisUserControl.Designer.cs">
+      <DependentUpon>SiparisUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SirketleriDuzenleUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SirketleriDuzenleUserControl.Designer.cs">
+      <DependentUpon>SirketleriDuzenleUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkleUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UrunEkleUserControl.Designer.cs">
+      <DependentUpon>UrunEkleUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunlerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UrunlerUserControl.Designer.cs">
+      <DependentUpon>UrunlerUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YeniSirketUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YeniSirketUserControl1.Designer.cs">
+      <DependentUpon>YeniSirketUserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaEkranUserControl.resx">
+      <DependentUpon>AnaEkranUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirimFrm.resx">
+      <DependentUpon>bildirimFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesajForm.resx">
+      <DependentUpon>MesajForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriKayit.resx">
+      <DependentUpon>MusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SiparisUserControl.resx">
+      <DependentUpon>SiparisUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SirketleriDuzenleUserControl.resx">
+      <DependentUpon>SirketleriDuzenleUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEkleUserControl.resx">
+      <DependentUpon>UrunEkleUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunlerUserControl.resx">
+      <DependentUpon>UrunlerUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniSirketUserControl1.resx">
+      <DependentUpon>YeniSirketUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weith.png" />
+    <None Include="Resources\turn-off1.png" />
+    <None Include="Resources\turn-off.png" />
+    <None Include="Resources\recompany.png" />
+    <None Include="Resources\order.png" />
+    <None Include="Resources\company.png" />
+    <None Include="Resources\bill.png" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\356.jpg" />
+    <None Include="Resources\896.jpg" />
+    <None Include="Resources\1569.jpg" />
+    <None Include="Resources\2896.jpg" />
+    <None Include="Resources\15691.jpg" />
+    <None Include="Resources\9862.jpg" />
+    <None Include="Resources\55965.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\business-communication-computer-free-stock-photo-image-wallpaper.jpeg" />
+    <Content Include="Resources\imza.png" />
+    <None Include="Resources\indir %282%29.jpg" />
+    <None Include="Resources\indir %282%291.jpg" />
+    <None Include="Resources\indir.jpg" />
+    <Content Include="Resources\logo.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
